@@ -1,13 +1,9 @@
-import { useState } from "react";
 import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 import WebApp from "@twa-dev/sdk";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div>
@@ -19,11 +15,7 @@ function App() {
       <div className="card"></div>
       {/* Here we add our button with alert callback */}
       <div className="card">
-        <button
-          onClick={() =>
-            WebApp.showAlert(`Hello World! Current count is ${count}`)
-          }
-        >
+        <button onClick={() => WebApp.showAlert(`huehue`)}>
           Pequeña no digas eso
         </button>
       </div>
